@@ -31,7 +31,7 @@ repositories {
 }
 
 dependencies {
-    compile fileTree(dir: 'libs', include: ['*.jar'])
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
     implementation group: 'org.rundeck', name: 'rundeck-core', version: rundeckVersion
     pluginLibs 'com.ciscospark:ciscospark-client:1.0-SNAPSHOT'
     pluginLibs 'org.freemarker:freemarker:2.3.28'
