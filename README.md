@@ -10,8 +10,13 @@ A notification plugin for Rundeck to send notifications to WebEx Teams.
 
 1. Build a snapshot from source using `gradle build`
 2. Copy the `build/libs/rundeck-webexteams-1.0.jar` file to your `$RDECK_BASE/libext` folder
-3. ???
-4. Profit
+3. Get an App Token from WebEx.
+     New Bot: https://developer.webex.com/my-apps/new/bot
+     Existing Bot: https://developer.webex.com/my-apps
+4. Add the token (only shown once when you generate it for your app), to the following key:
+     project.plugin.Notification.WebExTeams.token=<token>
+5. In Rundeck when you add a Notification you can now pick WebEx.  The room is the ID of the Room not the name.  You can get the ID by selecting the Gear and then the link to the room.  The space= part is the Room ID
+6. Profit
 
 ## Configuration
 
